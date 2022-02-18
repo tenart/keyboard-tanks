@@ -1,0 +1,366 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Keyboard Tanks</title>
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/model.css">
+        <link rel="stylesheet" type="text/css" href="css/texture.css">
+        <link href="https://fonts.googleapis.com/css?family=Passion+One|UnifrakturCook:700" rel="stylesheet">
+    </head>
+    <body>  
+        <div id="wrap">
+            <div id="movement_wrap">
+                <div id="plane">
+                    <div id="scene_wrap" class="center">
+                        <div id="tank1" class="tank_wrap">
+                            <div class="shadow center"></div>
+                            <div class="chassis_top center">
+                                <div class="ct_top center polygon"></div>
+                                <div class="ct_front center polygon"></div>
+                                <div class="ct_back center polygon"></div>
+                                <div class="ct_left center polygon"></div>
+                                <div class="ct_right center polygon"></div>
+                                <div class="fender_front center polygon flat"></div>
+                                <div class="fender_wrap center">
+                                    <div class="fender_left center polygon flat"></div>
+                                    <div class="fender_right center polygon flat"></div>
+                                </div>
+                                <div class="fender_rear center polygon flat"></div>
+                                <div class="exhaust ex_left center">
+                                    <div class="e_top center polygon"></div>
+                                    <div class="e_left center polygon flat"></div>
+                                    <div class="e_back center polygon flat"></div>
+                                    <div class="e_right center polygon flat"></div>
+                                </div>
+                                <div class="exhaust ex_right center">
+                                    <div class="e_top center polygon"></div>
+                                    <div class="e_left center polygon flat"></div>
+                                    <div class="e_back center polygon flat"></div>
+                                    <div class="e_right center polygon flat"></div>
+                                </div>
+                            </div>
+                            <div class="chassis_bottom center">
+                                <div class="cb_front center polygon"></div>
+                                <div class="cb_left center polygon"></div>
+                                <div class="cb_right center polygon"></div>
+                                <div class="cb_back center polygon"></div>
+                                <div class="cb_bottom center polygon"></div>
+                                
+                                <div class="tracks_wrap tr_left center">
+                                    <div class="tr_1 center polygon flat link"></div>
+                                    <div class="tr_2 center polygon flat link"></div>
+                                    <div class="tr_3 center polygon flat link"></div>
+                                    <div class="tr_4 center polygon flat link"></div>
+                                    <div class="tr_5 center polygon flat link"></div>
+                                    <div class="tr_6 center polygon flat link"></div>
+                                    <div class="tr_7 center polygon flat link"></div>
+                                    <div class="tr_8 center polygon flat link"></div>
+                                    
+                                    <div class="tr_inside center polygon flat"></div>
+                                    <div class="tr_outside center polygon"></div>
+                                    <div class="tr_dirt_front center polygon flat"></div>
+                                    <div class="tr_dirt_back center polygon flat"></div>
+                                    <div class="wheels_outer center">
+                                        <div class="wheel polygon"></div>
+                                        <div class="wheel polygon"></div>
+                                        <div class="wheel polygon"></div>
+                                    </div>
+                                    <div class="wheels_inner center">
+                                        <div class="wheel polygon"></div>
+                                        <div class="wheel polygon"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="tracks_wrap tr_right center">
+                                    <div class="tr_1 center polygon flat link"></div>
+                                    <div class="tr_2 center polygon flat link"></div>
+                                    <div class="tr_3 center polygon flat link"></div>
+                                    <div class="tr_4 center polygon flat link"></div>
+                                    <div class="tr_5 center polygon flat link"></div>
+                                    <div class="tr_6 center polygon flat link"></div>
+                                    <div class="tr_7 center polygon flat link"></div>
+                                    <div class="tr_8 center polygon flat link">
+                                    </div>
+                                    
+                                    <div class="tr_inside center polygon flat"></div>
+                                    <div class="tr_outside center polygon"></div>
+                                    <div class="tr_dirt_front center polygon flat"></div>
+                                    <div class="tr_dirt_back center polygon flat"></div>
+                                    <div class="wheels_outer center">
+                                        <div class="wheel polygon"></div>
+                                        <div class="wheel polygon"></div>
+                                        <div class="wheel polygon"></div>
+                                    </div>
+                                    <div class="wheels_inner center">
+                                        <div class="wheel polygon"></div>
+                                        <div class="wheel polygon"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="turret_wrap center">
+                                <div class="tb_left center polygon"></div>
+                                <div class="tb_right center polygon"></div>
+                                
+                                <div class="tb_1 center polygon"></div>
+                                <div class="tb_2 center polygon"></div>
+                                <div class="tb_3 center polygon"></div>
+                                
+                                <div class="t_left1 center polygon"></div>
+                                <div class="t_left2 center polygon"></div>
+                                <div class="t_left3 center polygon"></div>
+                                
+                                <div class="t_right1 center polygon"></div>
+                                <div class="t_right2 center polygon"></div>
+                                <div class="t_right3 center polygon"></div>
+                                
+                                <div class="t_front center polygon"></div>
+                                
+                                <div class="m_front center polygon"></div>
+                                <div class="m_top center polygon"></div>
+                                <div class="m_left center polygon"></div>
+                                <div class="m_right center polygon"></div>
+                                
+                                <div class="t_top center polygon">
+                                </div>
+                                
+                                <div class="cupola_wrap center">
+                                    <div class="c_top center polygon"></div>
+                                    <div class="c_1 center polygon"></div>
+                                    <div class="c_2 center polygon"></div>
+                                    <div class="c_3 center polygon"></div>
+                                    <div class="c_4 center polygon"></div>
+                                    <div class="c_5 center polygon"></div>
+                                    <div class="c_6 center polygon"></div>
+                                    <div class="c_7 center polygon"></div>
+                                    <div class="c_8 center polygon"></div>
+                                </div>
+                                
+                                <div class="gun_wrap1 center">
+                                    <div class="ga_1 center polygon"></div>
+                                    <div class="ga_2 center polygon"></div>
+                                    <div class="ga_3 center polygon"></div>
+                                    <div class="ga_4 center polygon"></div>
+                                    <div class="ga_5 center polygon"></div>
+                                    <div class="ga_6 center polygon"></div>
+                                </div>
+                                
+                                <div class="gun_wrap2 center">
+                                    <div class="gb_1 center polygon"></div>
+                                    <div class="gb_2 center polygon"></div>
+                                    <div class="gb_3 center polygon"></div>
+                                    <div class="gb_4 center polygon"></div>
+                                    <div class="gb_5 center polygon"></div>
+                                    <div class="gb_6 center polygon"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tank2" class="tank_wrap">
+                            <div class="shadow center"></div>
+                            <div class="chassis_top center">
+                                <div class="ct_top center polygon"></div>
+                                <div class="ct_front center polygon"></div>
+                                <div class="ct_back center polygon"></div>
+                                <div class="ct_left center polygon"></div>
+                                <div class="ct_right center polygon"></div>
+                                <div class="fender_front center polygon flat"></div>
+                                <div class="fender_wrap center">
+                                    <div class="fender_left center polygon flat"></div>
+                                    <div class="fender_right center polygon flat"></div>
+                                </div>
+                                <div class="fender_rear center polygon flat"></div>
+                                <div class="exhaust ex_left center">
+                                    <div class="e_top center polygon"></div>
+                                    <div class="e_left center polygon flat"></div>
+                                    <div class="e_back center polygon flat"></div>
+                                    <div class="e_right center polygon flat"></div>
+                                </div>
+                                <div class="exhaust ex_right center">
+                                    <div class="e_top center polygon"></div>
+                                    <div class="e_left center polygon flat"></div>
+                                    <div class="e_back center polygon flat"></div>
+                                    <div class="e_right center polygon flat"></div>
+                                </div>
+                            </div>
+                            <div class="chassis_bottom center">
+                                <div class="cb_front center polygon"></div>
+                                <div class="cb_left center polygon"></div>
+                                <div class="cb_right center polygon"></div>
+                                <div class="cb_back center polygon"></div>
+                                <div class="cb_bottom center polygon"></div>
+                                
+                                <div class="tracks_wrap tr_left center">
+                                    <div class="tr_1 center polygon flat link"></div>
+                                    <div class="tr_2 center polygon flat link"></div>
+                                    <div class="tr_3 center polygon flat link"></div>
+                                    <div class="tr_4 center polygon flat link"></div>
+                                    <div class="tr_5 center polygon flat link"></div>
+                                    <div class="tr_6 center polygon flat link"></div>
+                                    <div class="tr_7 center polygon flat link"></div>
+                                    <div class="tr_8 center polygon flat link"></div>
+                                    <div class="tr_inside center polygon flat"></div>
+                                    <div class="tr_outside center polygon"></div>
+                                    <div class="tr_dirt_front center polygon flat"></div>
+                                    <div class="tr_dirt_back center polygon flat"></div>
+                                    <div class="wheels_outer center">
+                                        <div class="wheel polygon"></div>
+                                        <div class="wheel polygon"></div>
+                                        <div class="wheel polygon"></div>
+                                    </div>
+                                    <div class="wheels_inner center">
+                                        <div class="wheel polygon"></div>
+                                        <div class="wheel polygon"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="tracks_wrap tr_right center">
+                                    <div class="tr_1 center polygon flat link"></div>
+                                    <div class="tr_2 center polygon flat link"></div>
+                                    <div class="tr_3 center polygon flat link"></div>
+                                    <div class="tr_4 center polygon flat link"></div>
+                                    <div class="tr_5 center polygon flat link"></div>
+                                    <div class="tr_6 center polygon flat link"></div>
+                                    <div class="tr_7 center polygon flat link"></div>
+                                    <div class="tr_8 center polygon flat link">
+                                    </div>
+                                    <div class="tr_inside center polygon flat"></div>
+                                    <div class="tr_outside center polygon"></div>
+                                    <div class="tr_dirt_front center polygon flat"></div>
+                                    <div class="tr_dirt_back center polygon flat"></div>
+                                    <div class="wheels_outer center">
+                                        <div class="wheel polygon"></div>
+                                        <div class="wheel polygon"></div>
+                                        <div class="wheel polygon"></div>
+                                    </div>
+                                    <div class="wheels_inner center">
+                                        <div class="wheel polygon"></div>
+                                        <div class="wheel polygon"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="turret_wrap center">
+                                <div class="tb_left center polygon"></div>
+                                <div class="tb_right center polygon"></div>
+                                
+                                <div class="tb_1 center polygon"></div>
+                                <div class="tb_2 center polygon"></div>
+                                <div class="tb_3 center polygon"></div>
+                                
+                                <div class="t_left1 center polygon"></div>
+                                <div class="t_left2 center polygon"></div>
+                                <div class="t_left3 center polygon"></div>
+                                
+                                <div class="t_right1 center polygon"></div>
+                                <div class="t_right2 center polygon"></div>
+                                <div class="t_right3 center polygon"></div>
+                                
+                                <div class="t_front center polygon"></div>
+                                
+                                <div class="m_front center polygon"></div>
+                                <div class="m_top center polygon"></div>
+                                <div class="m_left center polygon"></div>
+                                <div class="m_right center polygon"></div>
+                                
+                                <div class="t_top center polygon"></div>
+                                
+                                <div class="cupola_wrap center">
+                                    <div class="c_top center polygon"></div>
+                                    <div class="c_1 center polygon"></div>
+                                    <div class="c_2 center polygon"></div>
+                                    <div class="c_3 center polygon"></div>
+                                    <div class="c_4 center polygon"></div>
+                                    <div class="c_5 center polygon"></div>
+                                    <div class="c_6 center polygon"></div>
+                                    <div class="c_7 center polygon"></div>
+                                    <div class="c_8 center polygon"></div>
+                                </div>
+                                
+                                <div class="gun_wrap1 center">
+                                    <div class="ga_1 center polygon"></div>
+                                    <div class="ga_2 center polygon"></div>
+                                    <div class="ga_3 center polygon"></div>
+                                    <div class="ga_4 center polygon"></div>
+                                    <div class="ga_5 center polygon"></div>
+                                    <div class="ga_6 center polygon"></div>
+                                </div>
+                                
+                                <div class="gun_wrap2 center">
+                                    <div class="gb_1 center polygon"></div>
+                                    <div class="gb_2 center polygon"></div>
+                                    <div class="gb_3 center polygon"></div>
+                                    <div class="gb_4 center polygon"></div>
+                                    <div class="gb_5 center polygon"></div>
+                                    <div class="gb_6 center polygon"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="shell1" class="shell">
+                            <div class="shell_vertical"></div>
+                        </div>
+                        <div id="blast1" class="blast_wrap">
+                            <div class="blast_gfx_2 center polygon flat"></div>
+                        </div>
+                        <div id="tracer1" class="tracer">
+                            <div class="tracer_graphics tracer_vertical polygon flat"></div>
+                            <div class="tracer_graphics tracer_horizontal polygon flat"></div>
+                        </div>
+                        <div id="shell2" class="shell polygon flat">
+                            <div class="shell_vertical polygon flat"></div>
+                        </div>
+                        <div id="blast2" class="blast_wrap">
+                            <div class="blast_gfx_2 center polygon flat"></div>
+                        </div>
+                        <div id="tracer2" class="tracer">
+                            <div class="tracer_graphics tracer_vertical polygon flat"></div>
+                            <div class="tracer_graphics tracer_horizontal polygon flat"></div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+        <div id="gui">
+            <div id="vignette"></div>
+            <p id="dimensions">Face Dimensions:</p>
+            <input id="tank1_label" class="tank_label" type="text">
+            <input id="tank2_label" class="tank_label" type="text">
+            <div id="debug">
+                <p class="cat">tank1</p>
+                <p id="t1_direction"></p>
+                <p id="t1_turretDir"></p>
+                <p id="t1_x"></p>
+                <p id="t1_y"></p>
+                <p id="t1_reloaded"></p>
+                <p class="cat">tank2</p>
+                <p id="t2_direction"></p>
+                <p id="t2_turretDir"></p>
+                <p id="t2_x"></p>
+                <p id="t2_y"></p>
+                <p id="t2_reloaded"></p>
+                <p class="cat">general</p>
+                <p id="distance"></p>
+            </div>
+            <div id="info">
+                <p>Room3D is the result of more CSS 3D experimentation and practicing.</p>
+                <br>
+                <p>I came across a picture of an abandoned room while searching for some reference images and thought it would be cool to recreate the image using nothing but CSS.</p>
+                <br>
+                <p>Use the WASD keys to move and click and drag to look around the room.</p>
+            </div>
+            <div id="button_tray">
+                <button id="about" class="button"><i class="fa fa-question"></i></button>
+                <button id="audio" class="button"><i class="fa fa-volume-off"></i></button>
+                <button id="center" class="button"><i class="fa fa-crosshairs"></i></button>
+                <!--<button id="mode" class="button"><i class="fa fa-refresh"></i></button>-->
+            </div>
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.3/howler.core.min.js"></script>
+    <script src="https://use.fontawesome.com/442abb327b.js"></script>
+    <script src="js/keypress-2.1.4.min.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/tools.js"></script>
+</html>

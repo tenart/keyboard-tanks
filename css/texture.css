@@ -1,0 +1,400 @@
+#scene_wrap {
+    background: 
+        url(../img/grid128.png) top left / 100px, url(../img/san_ripple.png) center center / 500px, #aebf4f;
+    /*#f5daa*/
+}
+
+.tank_wrap *.polygon {
+    background-image: url(../img/tank_texture.png);
+    background-size: 512px 512px;
+    background-blend-mode: overlay;
+}
+
+.tr_outside.polygon {
+}
+
+#tank1 *.polygon {
+    background-color: #2272ac;
+}
+
+#tank2 *.polygon {
+    background-color: #843a0c;
+}
+
+#tank3 *.polygon {
+    background-color: #46639a;
+}
+
+#tank4 *.polygon {
+    background-color: #0b1e5a;
+}
+
+#tank5 *.polygon {
+    background-color: #2272ac;
+}
+
+#tank6 *.polygon {
+    background-color: #843a0c;
+}
+
+/*2272ac*/
+
+/*843a0c*/
+
+#tank1 .tb_2, #tank1 .t_left1, #tank1 .t_right1, #tank2 .tb_2, #tank2 .t_left1, #tank2 .t_right1 {
+    color: #ffffff;
+    line-height: 20px;
+    text-align: center;
+    font-size: 10px;
+    font-family: 'Passion One';
+    overflow: hidden;
+}
+
+/*
+@keyframes wheels_f {
+    from{
+        background-position: 0px 0px;
+    }
+    to{
+        background-position: -672px 0px;
+    }
+}
+
+@keyframes wheels_b {
+    from{
+        background-position: 0px 0px;
+    }
+    to{
+        background-position: 672px 0px;
+    }
+}
+*/
+.tank_wrap .shadow {
+    width: calc(150px);
+    height: calc(150px);
+    -webkit-mask: url(../img/blob.png) center center / 100% no-repeat;
+    transform: translateZ(-29px) translateY(10px) scale3D(2,2,1);
+    box-shadow: none;
+    opacity: 0.2;
+    image-rendering: initial;
+    background: black;
+}
+
+#tank1.tank_wrap .link, 
+#tank2.tank_wrap .link,
+#tank3.tank_wrap .link,
+#tank4.tank_wrap .link,
+#tank5.tank_wrap .link,
+#tank6.tank_wrap .link{
+    background-image: url(../img/tracks.png);
+    background-size:  26px 20px;
+    background-blend-mode: multiply;
+    animation: 0.4s infinite linear;
+    background-color: #585858;
+}
+
+@keyframes tracks_forward {
+    from{
+        background-position: 0px 0px;
+    }
+    from{
+        background-position: 0px 20px;
+    }
+}
+
+@keyframes tracks_backward {
+    from{
+        background-position: 0px 0px;
+    }
+    from{
+        background-position: 0px -20px;
+    }
+}
+
+.blast_wrap * {
+    background: url(../img/blast_animation.png) 0px 0px / 5600px 200px;
+    animation: steps(28) 1s;
+    opacity: 0;
+}
+
+@keyframes blast2 {
+    0% {
+        background-position: 0px 0px;
+        opacity: 1;
+    }
+    100% {
+        background-position: -5600px 0;
+        opacity: 1;
+    }
+}
+
+.shell {
+    background: url(../img/shell.png) center center / 100%;
+}
+
+.shell_vertical {
+    background: url(../img/shell.png) center center / 100%;
+}
+
+.tracer_graphics {
+    background-image: url(../img/tracer.png); 
+    -webkit-mask: url(../img/tracer_clip.png) 0 0 / 100% 100%;
+    animation: smoke2 9s infinite linear;
+}
+
+.tracer_graphics.tracer_vertical {
+    animation: smoke1 5s infinite linear;
+    background-size: 700px 50px;
+}
+
+@keyframes smoke2 {
+    from{
+        background-position: 0px 0px;
+    }
+    from{
+        background-position: -500px 0px;
+    }
+}
+
+@keyframes smoke1 {
+    from{
+        background-position: 0px 0px;
+    }
+    from{
+        background-position: -700px 0px;
+    }
+}
+
+.tr_inside.polygon {
+    background-image: none;
+}
+
+.tr_outside.polygon {
+    background-image: none;
+}
+
+.tank_wrap .tr_dirt_front.polygon, .tank_wrap .tr_dirt_back.polygon {
+    background-image: url(../img/dirt_sprite.png);
+    background-size:  1300px 50px;
+    background-position: 0px 0px;
+    opacity: 0;
+}
+
+.tr_left .tr_dirt_back.polygon {
+    animation-delay: 0.2s;
+}
+
+.tr_right .tr_dirt_front.polygon {
+    animation-delay: 0.6s;
+}
+
+@keyframes dirt {
+    from{
+        background-position: 0px 0px;
+    }
+    to{
+        background-position: -1300px 0px;
+    }
+}
+
+.wheel {
+    background-position: -100px -166px;
+}
+
+.ct_top {
+    background-position: -20px 0;
+}
+
+.ct_front {
+    background-position: -20px -100px
+}
+
+.ct_left, .ct_right {
+    background-position: -100px -100px
+}
+
+.ct_back {
+    background-position: -200px -100px;
+}
+
+.cb_back {
+    background-position: -220px -120px;
+}
+
+.cb_front {
+    background-position: -40px -144px;
+}
+
+.fender_front {
+    background-position: -15px -120px
+}
+
+.fender_left, .fender_right {
+    background-position: -100px -145px;
+}
+
+.fender_rear {
+    background-position: -195px -120px;
+}
+
+.e_left {
+    background-position: -210px -60px;
+}
+
+.e_back {
+    background-position: -222px -60px;
+}
+
+.e_right {
+    background-position: -234px -60px;
+}
+
+.t_top {
+    background-position: -28px -200px;
+}
+
+.t_front {
+    background-position: -37px -268px;
+}
+
+.t_left1 {
+    background-position: -83px -268px;
+}
+
+.t_right1 {
+    background-position: -9px -268px;
+}
+
+.t_left2, .t_right2 {
+    background-position: -111px -268px;
+}
+
+.t_left3, .t_right3 {
+    background-position: -131px -268px;
+}
+
+.tb_left, .tb_right {
+    background-position: -141px -268px;
+}
+
+.tb_1, .tb_3 {
+    background-position: -153px -268px;
+}
+
+.tb_2 {
+    background-position: -167px -268px;
+}
+
+.cupola_wrap * {
+    background-position: -100px -220px;
+}
+
+.c_top {
+    background-position: -100px -200px;
+}
+
+.m_left {
+    background-position: -83px -304px;
+}
+
+.m_right {
+    background-position: -33px -304px;
+}
+
+.m_top {
+    background-position: -37px -300px;
+}
+
+.m_front {
+    background-position: -37px -304px;
+}
+
+.gun_wrap2 * {
+    background-position: -56px -352px;
+}
+
+.ga_1 {
+    background-position: -56px -323px;
+}
+
+.ga_2 {
+    background-position: -64px -323px;
+}
+
+.ga_3 {
+    background-position: -72px -323px;
+}
+
+.ga_4 {
+    background-position: -80px -323px;
+}
+
+.ga_5 {
+    background-position: -88px -323px;
+}
+
+.ga_6 {
+    background-position: -96px -323px;
+}
+
+.gb_1 {
+    background-position: -56px -352px;
+}
+
+.gb_2 {
+    background-position: -64px -352px;
+}
+
+.gb_3 {
+    background-position: -72px -352px;
+}
+
+.gb_4 {
+    background-position: -80px -352px;
+}
+
+.gb_5 {
+    background-position: -88px -352px;
+}
+
+.gb_6 {
+    background-position: -96px -352px;
+}
+
+#tank3, #tank4, #tank5, #tank6 {
+    display: none;
+}
+
+/*
+#tank1.tank_wrap *.polygon {
+    background-image: none;
+    background-color: transparent;
+    box-shadow: inset 0 0 0 0.2px white;
+    backface-visibility: visible;
+}
+
+#tank2.tank_wrap *.polygon {
+    background-image: none;
+    background-color: transparent;
+    box-shadow: inset 0 0 0 0.2px white;
+    backface-visibility: visible;
+}
+
+#tank1.tank_wrap .t_top.polygon,
+#tank1.tank_wrap .wheel.polygon,
+#tank1.tank_wrap .ga_1.polygon,
+#tank1.tank_wrap .ga_2.polygon,
+#tank1.tank_wrap .m_front.polygon,
+#tank1.tank_wrap .ct_front.polygon,
+#tank1.tank_wrap .fender_front.polygon{
+    background-image: url(../img/tank_texture.png);
+    background-color: #2272ac;
+}
+*/
+
+
+
+
+
+
+

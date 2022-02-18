@@ -1,0 +1,155 @@
+body {
+    background: #212121;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform: perspective(1000px);
+    transform-style: preserve-3d;
+}
+
+body * {
+    transform-style: preserve-3d;
+    outline: none;
+}
+
+#gui {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform: translateZ(900px) scale(0.1);
+    pointer-events: none;
+    overflow: hidden;
+}
+
+#gui * {
+    pointer-events: all;
+}
+
+#vignette {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    /background: url(../img/vignette128.png) center center / 100% 100%;
+    opacity: 0.5;
+}
+
+#debug {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.75);
+    width: 250px;
+    font-size: 12px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: none;
+}
+
+.cat {
+    background: rgba(255, 255, 255, 0.22);
+}
+
+#debug p {
+    padding: 5px 10px;
+    font-family: Monaco;
+    color: white;
+}
+
+#dimensions {
+    color: white;
+    font-family: 'Monaco';
+    font-size: 12px;
+    background: black;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+    pointer-events: initial;
+}
+
+.tank_label {
+    color: white;
+    background: black;
+    font-family: 'Monaco';
+    font-size: 12px;
+    background: ;
+    padding: 10px;
+    margin: 5px 5px 10px;
+    display: block;
+    border: none;
+    pointer-events: initial;
+}
+
+textarea {
+    pointer-events: all;
+}
+
+#info {
+    background: #d0af7c;
+    font-size: 12px;
+    color: #866b40;
+    padding: 20px;
+    position: absolute;
+    width: 200px;
+    height: 230px;
+    text-align: justify;
+    top: calc(100% - 270px - 40px);
+    display: none;
+}
+
+#info p {
+    font-family: sans-serif;
+    font-weight: lighter;
+    line-height: 1.2;
+}
+
+#button_tray {
+    position: absolute;
+    height: 40px;
+    top: calc(100% - 40px);
+    transform-style: flat;
+    z-index: 9;
+    font-size: 0;
+    pointer-events: initial;
+}
+
+.button {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.35);
+}
+
+.button:hover {
+    background: #d0af7c;
+    color: #866b40;
+}
+
+.button.active {
+    background: #d0af7c;
+    color: #866b40;
+}
+
+#wrap {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform: translateZ(600px);
+}
+
+#movement_wrap {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+#plane {
+    width: 500px;
+    height: 500px;
+    left: calc(50% - 250px);
+    top: calc(50% - 250px);
+    position: absolute;
+    border: 0px solid rgba(0, 0, 0, 0.24);
+    border-bottom-color: red;
+    border-left-color: blue;
+}
